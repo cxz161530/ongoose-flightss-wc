@@ -1,8 +1,72 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.nav-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  column-gap: 10px;
+  
 }
 
-a {
-  color: #00B7FF;
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center; /* Center-align text within the body */
+  min-height: 100vh;
+  margin: 0
+}
+
+nav ul li {
+  display: inline-block;
+  /* border: 1px solid black;
+  border-radius: 4px;
+  width: 100px;
+  background-color: black; */
+}
+
+nav a {
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 100px;
+  background-color: black;
+  padding: 5px;
+  color:white;
+}
+
+nav a:hover {
+  background-color: white;
+  color:black;
+}
+
+nav ul.outsidelink a {
+  text-decoration: none;
+  color: #333; /* Change the color as needed */
+  font-weight: bold; /* Adjust font weight as needed */
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: black;
+}
+
+body > nav {
+  
+  background-color: #B8C0C2;}
+
+#new-form *, #add-review-form * {
+    font-size: 20px;
+}
+
+#add-review-form {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+}
+
+#add-review-form input[type="submit"] {
+  width: 8rem;
+  grid-column: 2 / 3;
+  margin-bottom: 2rem;
 }
